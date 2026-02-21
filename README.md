@@ -73,5 +73,8 @@ Routing
 
 Responsive UI design
 
+---
+
 👨‍💻 Author
+
 Srijeet Biswas
