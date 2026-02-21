@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.product-title {
+  color: #000; /* pure black */
+}
+.product-card {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+
+  /* Shadow */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  /* Smooth animation */
+  transition: all 0.25s ease;
+}
+
+/* Hover / Toggle effect */
+.product-card:hover {
+  transform: translateY(-6px); /* card lifts up */
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+.card-image img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .card-image img {
+  transform: scale(1.05);
+}
+.product-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.2);
+}
