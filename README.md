@@ -39,6 +39,7 @@ The application is optimized for:
 ---
 
 ## 📂 Project Structure
+```
 src/
 ├── components/
 │ └── ProductCard.jsx
@@ -47,6 +48,7 @@ src/
 │ └── ProductDetails.jsx
 ├── App.jsx
 └── App.css
+```
 
 ---
 
@@ -55,6 +57,9 @@ src/
 ```bash
 npm install
 npm run dev
+```
+
+---
 
 🎯 Purpose
 
@@ -69,5 +74,4 @@ Routing
 Responsive UI design
 
 👨‍💻 Author
-
 Srijeet Biswas
