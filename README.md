@@ -1,16 +1,80 @@
-# React + Vite
+# Minizeo
+A responsive React product listing application with grid and list views, product details page, and modern UI styling. Built using React, Vite, and CSS.
+# 🛍️ React Product Listing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive product listing web application built with **React + Vite**.  
+It displays products in grid and list views, includes a product details page, and features a clean modern UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ✅ Grid and List view toggle
+- ✅ Responsive layout (desktop & mobile)
+- ✅ Product details page
+- ✅ Card hover animations & shadow effects
+- ✅ Clean UI with centered layout
+- ✅ Dynamic routing using React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧱 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- JavaScript (ES6)
+- CSS3
+- React Router DOM
+
+---
+
+## 📱 Responsiveness
+
+The application is optimized for:
+
+- Desktop screens
+- Tablets
+- Mobile devices
+
+---
+
+## 📂 Project Structure
+```
+src/
+├── components/
+│ └── ProductCard.jsx
+├── pages/
+│ ├── Home.jsx
+│ └── ProductDetails.jsx
+├── App.jsx
+└── App.css
+```
+
+---
+
+## 🛠️ Installation & Run
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+🎯 Purpose
+
+This project was built as part of a learning/assignment task to practice:
+
+React component architecture
+
+State management
+
+Routing
+
+Responsive UI design
+
+---
+
+👨‍💻 Author
+
+Srijeet Biswas
