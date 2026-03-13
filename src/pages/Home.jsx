@@ -1,11 +1,19 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../services/api";
 import ProductCard from "../components/ProductCard";
+import SearchBar from "../components/SearchBar";
+import { useCart } from "../context/CartContext";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [view, setView] = useState("grid");
+  const [search, setSearch] = useState("");
+  const {cart, addToCart} = useCart();
+
+const filteredProducts = products.filter((p) =>
+  p.title.toLowerCase().includes(search.toLowerCase())
+);
 
   useEffect(() => {
     getProducts()
@@ -22,16 +30,25 @@ export default function Home() {
     <div style={{ textAlign: "center", marginBottom: "30px" }}>
       <h1 style={{color:"black", marginBottom: "15px" }}>PRODUCTS</h1>
 
-      <button onClick={() => setView("grid")}>
-        Grid View
-      </button>
+      {/*Search Bar*/}
+      <div style={{marginBottom:"15px"}}>
+        <SearchBar search={search}setSearch={setSearch}/>
+      </div>
 
-      <button
-        onClick={() => setView("list")}
-        style={{ marginLeft: "10px" }}
-      >
-        List View
-      </button>
+      {/*View Buttons*/}
+      <div>
+        <button onClick={()=> setView("grid")}>
+          Grid View
+        </button>
+
+        <button
+         onClick={()=> setView("list")}
+         style={{marginLeft:"10px"}}
+        >
+          List View
+        </button>
+      </div>
+      
     </div>
 
     {/* PRODUCT LAYOUT */}
